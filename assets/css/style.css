@@ -22,6 +22,157 @@ Author Email: regaltheme@gmail.com */
 ======================================
 */
 /*01. common css*/
+/* pics slider */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.content{
+  width: 100vw;
+  min-height: 300px;
+margin-top: 90px;
+}
+
+.content .container{
+  padding-top: 30px;
+  padding-bottom: 20px;
+  box-shadow: 2px 15px 20px #1f1f1f10,-2px -8px 20px #1f1f1f1a;
+}
+
+
+.container .rollers{
+  flex: 0 0 230px;
+}
+
+.container .start-roller{
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(to right, #ffffff00);
+}
+
+.container .start-roller,
+.container .end-roller{
+  height: 100%;
+  width: 40px;
+  position: absolute;
+  z-index: 1;
+}
+
+.container .end-roller{
+  right: 0;
+  top: 0;
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0));
+}
+
+.container .rollers .wrapper{
+  position: relative;
+  width: 100%;
+  height: 300px;
+  margin: 0 0 20px 0;
+  flex: 0 0 auto;
+}
+
+.container .rollers .wrapper .items-container{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+
+.container .rollers .wrapper .items-container.roll-LL{
+  animation-name: roll;
+}
+.container .rollers .wrapper .items-container.roll-RL{
+  animation-name: roll-reverse;
+  left: 100%;
+}
+.container .rollers .wrapper .items-container.reverse-roll-LL{
+  animation-name: roll-clockwise;
+  left: -100%;
+}
+.container .rollers .wrapper .items-container.reverse-roll-RL{
+  animation-name: roll-reverse-clockwise;
+  left: 100%;
+}
+
+@keyframes roll {
+  0%{
+      left: 0%;
+  }
+  100%{
+      left: -100%;
+  }
+}
+@keyframes roll-reverse {
+  0%{
+      left: 100%;
+  }
+  100%{
+      left: 0%;
+  }
+}
+@keyframes roll-clockwise {
+  0%{
+      left: -100%;
+  }
+  100%{
+      left: 0%;
+  }
+}
+@keyframes roll-reverse-clockwise {
+  0%{
+      left: 0%;
+  }
+  100%{
+      left: 100%;
+  }
+}
+
+
+.container .rollers .wrapper .items-container .item{
+  flex: 1 1 200px;
+  min-width: 0;
+  margin: 20px;
+}
+
+.container .rollers .wrapper .items-container .item .company{
+  filter: grayscale(0%);
+  opacity: 1;
+  cursor: pointer;
+height: 300px;
+width: 300px;
+}
+
+.container img{
+  vertical-align: middle;
+}
+
+@media (max-width: 575.5px) {
+  .content{
+      padding: 20px;
+  }
+  .content .container{
+      padding: 20px;
+  }
+  .h3{
+      font-size: calc(1.1rem + .6vw);
+  }
+  .fs-5 {
+      font-size: 0.9rem!important;
+  }
+  .container .rollers .wrapper .items-container .item .company{
+      opacity: 0.4;
+  }
+}
+/* pics slider */
+
 .project-image {
 	display: block;
 	width: 300px;
@@ -72,11 +223,19 @@ body {
   @media only screen and (max-width: 479px) {
     body {
       font-size: 14px;
-      line-height: 1.75rem; } }
+      line-height: 1.75rem; }
+    .contact-form{
+      margin-top: 120px;
+    }}
+    @media screen and (max-width: 479px) {
+       #map iframe{
+        width: 340px;
+        height: 399px;
+      }
+    }
   body.dark {
     color: #fff;
     background-color: #131517; }
-
 p {
   margin-bottom: 0; }
 
