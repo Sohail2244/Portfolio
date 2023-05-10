@@ -154,13 +154,13 @@ width: 300px;
   vertical-align: middle;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 350px) {
   .container .rollers .wrapper .items-container .item .company{
     filter: grayscale(0%);
     opacity: 1;
     cursor: pointer;
   height: 250px;
-  width:100px;
+  width:300px;
   }
   .content{
       padding: 20px;
@@ -846,7 +846,8 @@ a {
 /*container*/
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1170px; } }
+    max-width: 1170px; 
+    padding-right: 0px;} }
 
 @media only screen and (min-width: 480px) and (max-width: 576px) {
   .container {
@@ -854,7 +855,7 @@ a {
 
 @media only screen and (max-width: 479px) {
   .container {
-    max-width: 320px; } }
+    max-width: 416px; } }
 
 .container-wide {
   max-width: 100%;
