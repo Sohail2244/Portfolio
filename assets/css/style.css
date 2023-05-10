@@ -154,7 +154,14 @@ width: 300px;
   vertical-align: middle;
 }
 
-@media (max-width: 575.5px) {
+@media (max-width: 550px) {
+  .container .rollers .wrapper .items-container .item .company{
+    filter: grayscale(0%);
+    opacity: 1;
+    cursor: pointer;
+  height: 250px;
+  width:100px;
+  }
   .content{
       padding: 20px;
   }
@@ -226,11 +233,22 @@ body {
       line-height: 1.75rem; }
     .contact-form{
       margin-top: 120px;
-    }}
+    }    
+    .content{
+      width: 100vw;
+      min-height: 200px;
+      margin-top: 90px;
+    }
+  }
     @media screen and (max-width: 479px) {
        #map iframe{
         width: 340px;
         height: 399px;
+      }
+      .content{
+        width: 100vw;
+        min-height: 300px;
+      margin-top: 90px;
       }
     }
   body.dark {
