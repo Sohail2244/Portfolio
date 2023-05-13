@@ -186,6 +186,6 @@ Template Name: Raza
                 map: map
             });
         }
-        google.maps.event.addDomListener(window, 'load', initialize);
+        // google.maps.event.addDomListener(window, 'load', initialize);
     }
 })(jQuery);
