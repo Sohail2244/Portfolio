@@ -29,6 +29,34 @@ Author Email: regaltheme@gmail.com */
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+.swal2-title{
+  color: black !important; 
+}
+.swal2-confirm{
+  background-color: #ff214f !important;
+ 
+  
+}
+
+.swal2-confirm:focus{ box-shadow: none !important;
+}
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	left:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
 .content{
   width: 100vw;
   min-height: 300px;
@@ -280,6 +308,12 @@ a {
   a:hover {
     color: #ff214f;
     text-decoration: none; }
+  a.float:hover{
+    color: white !important;
+  } 
+  a.float:focus{
+    color: white !important;
+  } 
   a:focus {
     color: #252525;
     outline: 0;
